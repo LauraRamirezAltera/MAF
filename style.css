@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.first_container{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+
+.first_text{
+    border: 1px solid #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.second{
+    margin-top:3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.second h3{
+    color:#013f7b;
+    margin-bottom: 4rem;
+}
+.second img{
+    width: 20rem;
+}
+.three{
+    background-color: #efeeec;
+}
+.three p{
+    color: #013f7b;
+    margin-bottom: 0.5rem;
+}
+.three h3{
+    color: #013f7b;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+.btn_footer{
+    background-color:#013f7b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+.btn_footer img{
+    width: 2rem;
+}
+.btn_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media(max-width:360px){
+    .second img{
+        width: 18rem;
+    }
+    .first_container{
+        height: 90vh;
+    }
+    .first_text h1{
+        font-size: 18px;
+    }
+    .three h3{
+        font-size:16px ;
+    }
+    .three p{
+        font-size:14px ;
+    }
+    .btn_footer {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+ 
+}
+@media(max-width:765px){
+    .first_container::after {
+        background-image: url(./img/fondo-blanco.png);
+        background-repeat: no-repeat;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5rem;
+    }
+    .three{
+        background-image: url(./img/callcenter.png);
+        background-repeat: no-repeat;
+        background-position: 10%;
+        background-size: cover;
+        text-align: right;
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .btn_box{
+        width: 50%;
+    }
+}
+@media(min-width:766px){
+    .first_text{
+        margin-bottom: 6rem;
+    }
+    .three{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+    }
+    .btn_footer{
+        margin: 0.5rem;
+    }
+}
+
